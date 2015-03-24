@@ -1,0 +1,22 @@
+conn myconn
+  authby=psk
+  auto=start
+  dpdaction=hold
+  esp=aes128-sha1!
+  forceencaps=yes
+  ike=aes128-sha1-modp2048!
+  keyexchange=ikev2
+  mobike=no
+  type=tunnel
+  left=%any
+  leftid=130.211.114.189
+  leftsubnet=10.120.0.0/16
+  leftauth=psk
+  leftikeport=4500
+  right=146.148.81.194
+  rightsubnet=10.240.0.0/16
+  rightauth=psk
+  rightikeport=4500
+  
+
+
